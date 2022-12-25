@@ -2,8 +2,8 @@ const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMoreButton");
 const details = document.getElementById("details");
 
-const maxRecords = 151;
-const limit = 12;
+const maxRecords = 1;
+const limit = 1;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -34,6 +34,8 @@ function loadPokemonItens(offset, limit) {
 
 loadPokemonItens(offset, limit);
 
+
+// ajustar aqui para funcionalidade correta do botão home.
 loadMoreButton.addEventListener("click", () => {
   offset += limit;
   const qtdRecordsWithNexPage = offset + limit;

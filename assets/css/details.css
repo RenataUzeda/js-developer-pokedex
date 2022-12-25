@@ -90,7 +90,7 @@ ol a {
 }
 
 .pokemon .number {
-  color: #000;
+  color: #fff;
   opacity: 0.5;
   text-align: right;
   font-size: 0.7rem;
@@ -149,20 +149,21 @@ ol a {
   border-radius: 1rem;
 }
 
+
 @media screen and (min-width: 380px) {
   .pokemons {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (min-width: 576px) {
   .pokemons {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1f;
   }
 }
 
 @media screen and (min-width: 992px) {
   .pokemons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
