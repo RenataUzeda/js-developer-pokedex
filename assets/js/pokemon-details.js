@@ -25,6 +25,9 @@ function convertPokemonToLi(pokemon) {
     `;
 }
 
+//TODO: Ao evento do clique criar um função que leve aos detalhes do pokemon "clicado".
+
+
 function loadPokemonItens(offset, limit) {
   pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
     const newHtml = pokemons.map(convertPokemonToLi).join("");
@@ -35,7 +38,7 @@ function loadPokemonItens(offset, limit) {
 loadPokemonItens(offset, limit);
 
 
-// ajustar aqui para funcionalidade correta do botão home.
+// TODO: ajustar aqui para funcionalidade correta do botão home.
 loadMoreButton.addEventListener("click", () => {
   offset += limit;
   const qtdRecordsWithNexPage = offset + limit;
